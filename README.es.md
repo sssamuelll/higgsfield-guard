@@ -148,6 +148,10 @@ npm uninstall -g higgsfield-guard
 
 Un adaptador es un archivo en `lib/adapters/` con `parse` (el payload del agente a una llamada neutra) y `render` (la decisión a la salida del agente), más una entrada en `lib/install/agents.js`. Sus pruebas usan los payloads de la documentación del propio agente. Windsurf, OpenCode y Goose son los próximos.
 
+## Privacidad
+
+Corre en tu máquina y no manda telemetría. Qué lee, qué envía y qué guarda: [PRIVACY.md](PRIVACY.md) (en inglés).
+
 ## Licencia
 
 MIT. Sin afiliación ni respaldo de Higgsfield.
