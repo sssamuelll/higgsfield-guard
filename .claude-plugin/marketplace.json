@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "higgsfield-guard",
+  "description": "Your AI agent asks before it spends Higgsfield credits.",
+  "owner": { "name": "Samuel Ballesteros", "url": "https://github.com/sssamuelll" },
+  "plugins": [
+    {
+      "name": "higgsfield-guard",
+      "source": "./",
+      "description": "Every Higgsfield generation from Claude Code stops at a prompt with the model, the cost and your balance.",
+      "version": "0.1.0",
+      "category": "security",
+      "homepage": "https://github.com/sssamuelll/higgsfield-guard"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "higgsfield-guard",
+  "version": "0.1.0",
+  "description": "Your AI agent asks before it spends Higgsfield credits.",
+  "license": "MIT",
+  "author": "Samuel Ballesteros (https://github.com/sssamuelll)",
+  "homepage": "https://github.com/sssamuelll/higgsfield-guard",
+  "bugs": "https://github.com/sssamuelll/higgsfield-guard/issues",
+  "type": "commonjs",
+  "bin": { "higgsfield-guard": "bin/higgsfield-guard.js" },
+  "files": ["bin", "lib", "README.md", "README.es.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" },
+  "repository": { "type": "git", "url": "git+https://github.com/sssamuelll/higgsfield-guard.git" },
+  "keywords": ["higgsfield", "mcp", "claude-code", "cursor", "codex", "gemini-cli", "kimi", "ai-agents", "guardrails"]
+}

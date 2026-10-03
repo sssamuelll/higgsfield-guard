@@ -1,0 +1,11 @@
+{
+  "name": "higgsfield-guard",
+  "displayName": "Higgsfield Guard",
+  "version": "0.1.0",
+  "description": "Your AI agent asks before it spends Higgsfield credits: every generation through the Higgsfield MCP server or CLI stops at a prompt with the model, the cost and your balance.",
+  "author": { "name": "Samuel Ballesteros", "url": "https://github.com/sssamuelll" },
+  "homepage": "https://github.com/sssamuelll/higgsfield-guard",
+  "repository": "https://github.com/sssamuelll/higgsfield-guard",
+  "license": "MIT",
+  "keywords": ["higgsfield", "mcp", "credits", "spending", "guardrails", "hooks"]
+}
