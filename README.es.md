@@ -136,7 +136,7 @@ npm uninstall -g higgsfield-guard
 
 ## Preguntas
 
-**¿Envía algo a algún lado?** No. Corre en tu máquina, le pide el precio al CLI de Higgsfield y escribe un registro local.
+**¿Envía algo a algún lado?** Por su cuenta, no. Para mostrar el precio y tu saldo, corre tu CLI de Higgsfield, que le pregunta a los servidores de Higgsfield con tu cuenta. Le pasa el modelo y sus ajustes, nunca tu prompt. Las decisiones quedan en un registro local, en tu máquina.
 
 **¿Hace más lento a mi agente?** Las llamadas que no tienen que ver con Higgsfield responden en milisegundos. Una generación espera uno o dos segundos por su precio.
 

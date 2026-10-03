@@ -134,7 +134,7 @@ npm uninstall -g higgsfield-guard
 
 ## Questions
 
-**Does it send anything anywhere?** No. It runs on your machine, asks the Higgsfield CLI for the price and writes a local log.
+**Does it send anything anywhere?** Not on its own. To show a price and your balance, it runs your Higgsfield CLI, which asks Higgsfield's servers with your account. It passes the model and its settings, never your prompt. Decisions go to a local log on your machine.
 
 **Does it slow my agent down?** Calls unrelated to Higgsfield return in milliseconds. A generation waits a second or two for its price.
 
