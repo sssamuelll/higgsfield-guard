@@ -1,6 +1,6 @@
 {
   "name": "higgsfield-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Your AI agent asks before it spends Higgsfield credits.",
   "license": "MIT",
   "author": "Samuel Ballesteros (https://github.com/sssamuelll)",

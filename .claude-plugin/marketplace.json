@@ -8,7 +8,7 @@
       "name": "higgsfield-guard",
       "source": "./",
       "description": "Every Higgsfield generation from Claude Code stops at a prompt with the model, the cost and your balance.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "security",
       "homepage": "https://github.com/sssamuelll/higgsfield-guard"
     }

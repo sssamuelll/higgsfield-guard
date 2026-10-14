@@ -1,7 +1,7 @@
 {
   "name": "higgsfield-guard",
   "displayName": "Higgsfield Guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Your AI agent asks before it spends Higgsfield credits: every generation through the Higgsfield MCP server or CLI stops at a prompt with the model, the cost and your balance.",
   "author": {
     "name": "Samuel Ballesteros",
