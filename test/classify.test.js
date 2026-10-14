@@ -128,3 +128,31 @@ test('agents approving for themselves', () => {
   process.env.HIGGSFIELD_GUARD_HOME = saved;
   assert.equal(type({ kind: 'write', path: path.join(home, 'notes.md') }), 'other');
 });
+
+test('redirects that write no file are not writes to the guard', () => {
+  for (const c of [
+    'ls ~/.higgsfield-guard 2>&1',
+    'ls ~/.higgsfield-guard >&2',
+    'cat ~/.higgsfield-guard/log.jsonl 2>/dev/null|tail -1',
+    'echo $(ls ~/.higgsfield-guard 2>&1)',
+    'ls ~/.higgsfield-guard &>/dev/null',
+    'ls ~/.higgsfield-guard >& /dev/null',
+    'Get-Content ~/.higgsfield-guard/log.jsonl 2>$null',
+    'type %USERPROFILE%\\.higgsfield-guard\\log.jsonl 2>NUL',
+  ]) {
+    assert.equal(type(sh(c)), 'other', c);
+  }
+  for (const c of [
+    'cat x 2>&1 > ~/.higgsfield-guard/allowance.json',
+    'echo {} >& ~/.higgsfield-guard/allowance.json',
+    'echo {} &> ~/.higgsfield-guard/allowance.json',
+    'echo {} 2>/dev/null >> ~/.higgsfield-guard/allowance.json',
+    'echo {} > ~/.higgsfield-guard/allowance.json 2>/dev/null',
+    'cd ~/.higgsfield-guard && echo {} > null.json',
+    'echo {} >&1/../.higgsfield-guard/allowance.json',
+    'echo {} >&1"/../.higgsfield-guard/allowance.json"',
+    'echo {} >nul\\..\\.higgsfield-guard\\allowance.json',
+  ]) {
+    assert.equal(type(sh(c)), 'self', c);
+  }
+});
